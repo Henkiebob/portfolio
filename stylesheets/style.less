@@ -1,6 +1,3 @@
-@import "elements.less";
-
-
 @nice-blue: #099fcd;
 @dark-blue: #0089b3;
 @broken-white : #f2f2f2;
@@ -8,3 +5,153 @@
 @logo-color: #0aa0cd;
 @font-gray: #323232;
 @font-black : #2e2e2e;
+
+.bottom-shadow{
+  -webkit-box-shadow: 0px 5px 9px 1px rgba(50, 50, 50, 0.42);
+  -moz-box-shadow:    0px 5px 9px 1px rgba(50, 50, 50, 0.42);
+  box-shadow:         0px 5px 9px 1px rgba(50, 50, 50, 0.42);
+}
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block; }
+  body {
+    line-height: 1; }
+  ol, ul {
+    list-style: none; }
+  blockquote, q {
+    quotes: none; }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none; }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+
+/* #Basic Styles
+================================================== */
+  body {
+    background: #fff;
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width:100%;
+    height:100%;
+ }
+
+ .header{
+  width:100%;
+  background:@white;
+  float:left;
+  z-index:10;
+  position:relative;
+  .bottom-shadow
+ }
+
+  #logo{
+    width:145px;
+    height:110px;
+    display:block;
+    margin: 0 auto;
+    margin-top:25px;
+    margin-bottom:25px;
+  }
+
+.intro{
+  min-height:400px;
+  width:100%;
+  float:left;
+  background:@nice-blue;
+  z-index:9;
+  position:relative;
+  .bottom-shadow
+}
+
+.bio{
+  margin:0 auto;
+  width:660px;
+  height:100%;
+  margin-top:25px;
+  margin-bottom:25px;
+  position:relative;
+
+  .avatar{
+  border-radius: 50%;
+  border: 3px solid @white;
+  float:left;
+  margin-right:20px;
+  }
+
+  h1{
+    font-size:22px;
+    color:@white;
+    line-height:40px;
+    font-weight:400;
+  }
+
+  p{
+    width:500px;
+    color:@white;
+    font-size: 14px;
+    line-height:17px;
+    float:left;
+    height:100px;
+    overflow: hidden;
+
+  }
+  .readmore{
+    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%);
+
+  }
+
+  .read_more{
+    background: url('../images/readmore.png') no-repeat bottom;
+    border: 0;
+    position: absolute;
+    top: 154px;
+    left: 56%;
+    width: 71px;
+    color: #fff;
+    padding-top: 30px;
+    height: 44px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+
+.showcase{
+  min-height:400px;
+  width:100%;
+  background:@dark-blue;
+  z-index:8;
+  position:relative;
+  .bottom-shadow
+}
+
+.skills{
+  min-height:400px;
+  width:100%;
+  z-index:7;
+  position:relative;
+  background:@broken-white;
+  .bottom-shadow
+}
+
+
+
