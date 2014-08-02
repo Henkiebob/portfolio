@@ -389,13 +389,13 @@
   top: 0; left: 0; bottom: 0; right: 0;
 }
 .showcase_item h2 {
-   text-transform: uppercase;
-   color: #fff;
+   color: @font-gray;
+   font-weight:bold;
    text-align: center;
    position: relative;
    font-size: 17px;
    padding: 10px;
-   background: rgba(0, 0, 0, 0.7);
+   background: white;
    margin: 20px 0 0 0;
 }
 .showcase_item p {
@@ -410,9 +410,10 @@
    display: inline-block;
    text-decoration: none;
    padding: 7px 14px;
-   background: @nice-blue;
+   background: @dark-blue;
    color: #fff;
-   -webkit-box-shadow: 0 0 1px #000;
-   -moz-box-shadow: 0 0 1px #000;
-   box-shadow: 0 0 1px #000;
+}
+.showcase_item a:hover{
+  background:white;
+  color:@font-gray;
 }
