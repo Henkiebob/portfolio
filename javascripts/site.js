@@ -4,7 +4,7 @@ $( document ).ready(function() {
 	// read more click
 	$( ".read_more" ).click(function() {
 		$(this).hide();
-	
+
 		$(".bio").find(".readmore" ).addClass("readmore_active");
 	});
 
@@ -12,7 +12,7 @@ $( document ).ready(function() {
 		$(this).addClass('active');
 		$(this).next().show();
 	});
-	
+
 	$( ".avatar" ).click(function() {
 		var path = 'images/';
 		var objects = [
@@ -24,9 +24,15 @@ $( document ).ready(function() {
 			path + 'tjerk-jippe-pirate.jpg'
 		];
 
-		shuffle(objects);	
+		shuffle(objects);
 		$(this).attr('src', objects[0]);
 	});
+
+
+  $( ".showcase_item" ).click(function() {
+      $('.showcase_container').find('.info_box').addClass('active');
+      $(this).addClass('active');
+  });
 
 });
 
