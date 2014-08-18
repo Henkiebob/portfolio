@@ -30,8 +30,21 @@ $( document ).ready(function() {
 
 
   $( ".showcase_item" ).click(function() {
-      $('.showcase_container').find('.info_box').addClass('active');
-      $(this).addClass('active');
+      
+        var id = $(this).data("id");
+        var url = "javascripts/json/project-"+id+".json";
+    
+      
+        $.ajax({
+            dataType: "json",
+            url: url,
+            success: function(data){
+                appendBox(data);
+            }
+        });
+      
+//      $('.showcase_container').find('.info_box').addClass('active');
+//      $(this).addClass('active');
   });
 
 });
@@ -41,3 +54,13 @@ function shuffle(o){ //v1.0
 	for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
 	return o;
 };
+
+
+function appendBox(data){
+    $('.project_info').show();
+    $('html, body').animate({
+        scrollTop: $(".project_info").offset().top
+    }, 2000);
+    
+    $('.project_info').append(data[1]);
+}
