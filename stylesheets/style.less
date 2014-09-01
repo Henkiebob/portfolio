@@ -210,11 +210,32 @@
 
 
 .skills{
-  min-height:400px;
-  width:100%;
-  z-index:7;
-  position:relative;
-  background:@broken-white;
+    min-height:400px;
+    width:100%;
+    z-index:7;
+    position:relative;
+    float:left;
+    background:#eaeaea;
+    
+    .skills_container{
+        margin-top:25px;
+        text-align: center;
+        margin:0 auto;
+    }
+    h1{
+        font-size:28px;
+        color:@font-gray;
+        line-height:40px;
+        font-weight:400;
+        margin: 0 auto;
+        display:block;
+        width:300px;
+        margin-top:25px;
+        margin-bottom:25px;
+        font-weight:bold;
+    }
+
+    
   .bottom-shadow
 }
 
@@ -420,5 +441,8 @@
    -ms-transition: all 1s ease-in-out;
    transition: all 1s ease-in-out;
     display:none;
+}
 
+#radar{
+    width:500px;
 }

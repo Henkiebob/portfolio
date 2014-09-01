@@ -1,5 +1,67 @@
 
 $( document ).ready(function() {
+    
+    // Get context with jQuery - using jQuery's .get() method.
+    var ctx = $("#radar").get(0).getContext("2d");
+    var ctx_2 = $("#pie").get(0).getContext("2d");
+    
+    var options = [];
+    
+    var radarData = {
+    labels: ["Programmeren", "Nadenken", "Onderzoeken", "Ontwerpen", "Fietsen", "Design Thinking", "Coderen", "Prutsen"],
+    datasets: [
+        {
+            label: "My First dataset",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [70, 40, 20, 40, 30, 70, 40, 10]
+        },
+        {
+            label: "My Second dataset",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [70, 30, 20, 40, 30, 70, 40, 10]
+        }
+    ]
+};
+    
+    var pieData = [
+        {
+            value: 300,
+            color:"#F7464A",
+            highlight: "#FF5A5E",
+            label: "Ruby On Rails"
+        },
+        {
+            value: 50,
+            color: "#46BFBD",
+            highlight: "#5AD3D1",
+            label: "PHP"
+        },
+        {
+            value: 100,
+            color: "#FDB45C",
+            highlight: "#FFC870",
+            label: "CSS/LESS"
+        }
+        ,
+        {
+            value: 100,
+            color: "#FDB45C",
+            highlight: "#FFC870",
+            label: "jQuery"
+        }
+    ]
+    var myRadarChart    = new Chart(ctx).Radar(radarData, options);
+    var myDoughnutChart = new Chart(ctx_2).Doughnut(pieData, options);
 
 	// read more click
 	$( ".read_more" ).click(function() {
