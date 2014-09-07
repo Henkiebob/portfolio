@@ -1,5 +1,5 @@
 {
-  "one": "Singular sensation",
-  "two": "Beady little eyes",
-  "three": "Little birds pitch by my doorstep"
+  "title": "Singular sensation",
+  "text": "Beady little eyes lorem ipsum",
+  "screenshot": "images/bennoe_logo.png"
 }

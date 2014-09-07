@@ -379,6 +379,10 @@
    -ms-transition: all 1s ease-in-out;
    transition: all 1s ease-in-out;
     margin:0 10px 20px;
+	
+	&.active{
+		box-shadow: 0 0 0 5px #099fcd inset;
+	}
 }
 
 .showcase_item .mask,.view .content {
@@ -441,6 +445,14 @@
    -ms-transition: all 1s ease-in-out;
    transition: all 1s ease-in-out;
     display:none;
+	
+	a{
+		display: inline-block;
+		text-decoration: none;
+		padding: 7px 14px;
+		background: #0089b3;
+		color: #fff;
+	}
 }
 
 #radar{
