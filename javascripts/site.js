@@ -138,11 +138,11 @@ $(document).scroll(function () {
 
 	if (y > (x.top - 50)) { // -50 so things don't overlap
 		$(".skill").addClass(
-			"bar-active");
+			"animation");
 	}
 	else {
 		$(".skill").removeClass(
-			"bar-active");
+			"animation");
 	
 	}
 });
