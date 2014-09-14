@@ -13,6 +13,91 @@
   box-shadow:         0px 5px 9px 1px rgba(50, 50, 50, 0.42);
 }
 
+progress, progress[role] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background-size: auto;
+  height: 40px;
+  width: 100%;
+}
+
+// The unordered list
+.skill-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 1em;
+  max-width:800px;
+}
+
+// The list item
+.skill {
+  margin-bottom: 1em;
+  position: relative;
+  h3 {
+    color: #fff;
+    font-size:17px;
+    left: 1em;
+    line-height: 1;
+    position: absolute;
+    top: 8px;
+	font-family: 'Raleway', sans-serif;
+  }
+  ::-webkit-progress-value { 
+    -webkit-animation: bar-fill 2s;
+    width: 0px;
+  }
+}
+
+// The background colors
+.skill-1::-webkit-progress-value {
+  background: #FF5A5E;
+}
+
+.skill-1::-moz-progress-bar {
+  background: #FF5A5E;
+}
+
+.skill-2::-webkit-progress-value {
+  background: #949fd1;
+}
+
+.skill-2::-moz-progress-bar {
+  background: #949fd1;
+}
+
+.skill-3::-webkit-progress-value {
+  background: #2baadd;
+}
+
+.skill-3::-moz-progress-bar {
+  background: #2baadd;
+}
+.skill-4::-webkit-progress-value {
+  background: #e7aa27;
+}
+.skill-4::-moz-progress-bar {
+  background: #e7aa27;
+}
+
+.skill-5::-webkit-progress-value {
+  background: #60d560;
+}
+.skill-5::-moz-progress-bar {
+  background: #60d560;
+}
+
+
+ // The keyframes
+@-webkit-keyframes bar-fill {
+  0% { width: 0; }
+}
+
+@keyframes bar-fill {
+  0% { width: 0; }
+}
+
 /* #Reset & Basics (Inspired by E. Meyers)
 ================================================== */
   html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
