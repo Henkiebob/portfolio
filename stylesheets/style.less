@@ -44,10 +44,14 @@ progress, progress[role] {
     top: 8px;
 	font-family: 'Raleway', sans-serif;
   }
-  ::-webkit-progress-value { 
-    -webkit-animation: bar-fill 2s;
+}
+
+.bar-active{
+  ::-webkit-progress-value {
+	-moz-animation: bar-fill 3s;
+    -webkit-animation: bar-fill 3s;
     width: 0px;
-  }
+  }	
 }
 
 // The background colors
@@ -332,7 +336,7 @@ progress, progress[role] {
    transition: all 0.2s ease-in;
 }
 .view-second .mask {
-   background-color: rgba(9, 159, 205, 0.8);
+   background-color: rgba(9, 159, 205, 0.9);
    width: 300px;
    padding: 60px;
    height: 300px;
@@ -440,11 +444,11 @@ progress, progress[role] {
    -o-transform: translate(0px,0px);
    -ms-transform: translate(0px,0px);
    transform: translate(0px,0px);
-   -webkit-transition-delay: 0.5s;
-   -moz-transition-delay: 0.5s;
-   -o-transition-delay: 0.5s;
-   -ms-transition-delay: 0.5s;
-   transition-delay: 0.5s;
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
 }
 .showcase_item {
     width: 225px;

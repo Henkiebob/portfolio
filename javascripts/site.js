@@ -131,6 +131,23 @@ $( document ).ready(function() {
 
 });
 
+
+$(document).scroll(function () {
+	var y = $(this).scrollTop();
+	var x = $(".skill-list").position();
+
+	if (y > (x.top - 50)) { // -50 so things don't overlap
+		$(".skill").addClass(
+			"bar-active");
+	}
+	else {
+		$(".skill").removeClass(
+			"bar-active");
+	
+	}
+});
+
+
 // shuffle for header
 function shuffle(o){ //v1.0
 	for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
