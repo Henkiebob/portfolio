@@ -5,103 +5,10 @@
   -moz-box-shadow: 0px 5px 9px 1px rgba(50, 50, 50, 0.42);
   box-shadow: 0px 5px 9px 1px rgba(50, 50, 50, 0.42);
 }
-progress,
-progress[role] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  background-size: auto;
-  height: 40px;
-  width: 100%;
-}
-.skill-list {
-  list-style: none;
-  margin: 0 auto;
-  max-width: 800px;
-}
-.skill {
-  margin-bottom: 1em;
-  position: relative;
-}
-.skill h3 {
-  color: #fff;
-  font-size: 17px;
-  left: 1em;
-  line-height: 1;
-  position: absolute;
-  top: 8px;
-  font-family: 'Raleway', sans-serif;
-}
-.skill progress::-webkit-progress-value {
-  transition: all 3s;
-}
-.start-at-zero progress::-webkit-progress-value {
-  width: 0 !important;
-  transition: none;
-}
-.footer {
-  margin: 0 auto;
-  background: #efefef;
-}
-.socialicons {
-  background: transparent;
-}
-.socialicons i {
-  color: white;
-  padding: 1em;
-  position: relative;
-  background: transparent;
-}
-.socialicons i:hover {
-  top: -2px;
-}
-.socialicons i:nth-child(1) {
-  background: #3b5998;
-  border-left: none;
-}
-.socialicons i:nth-child(2) {
-  background: #00a0d1;
-}
-.socialicons i:nth-child(3) {
-  background: #db4a39;
-}
-.socialicons i:nth-child(4) {
-  background: #c8232c;
-}
-.socialicons i:nth-child(5) {
-  background: #ea4c89;
-  border-right: none;
-}
-.skill-1::-webkit-progress-value {
-  background: #FF5A5E;
-}
-.skill-1::-moz-progress-bar {
-  background: #FF5A5E;
-}
-.skill-2::-webkit-progress-value {
-  background: #949fd1;
-}
-.skill-2::-moz-progress-bar {
-  background: #949fd1;
-}
-.skill-3::-webkit-progress-value {
-  background: #2baadd;
-}
-.skill-3::-moz-progress-bar {
-  background: #2baadd;
-}
-.skill-4::-webkit-progress-value {
-  background: #e7aa27;
-}
-.skill-4::-moz-progress-bar {
-  background: #e7aa27;
-}
-.skill-5::-webkit-progress-value {
-  background: #60d560;
-}
-.skill-5::-moz-progress-bar {
-  background: #60d560;
+.border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 /* #Reset & Basics (Inspired by E. Meyers)
 ================================================== */
@@ -233,14 +140,13 @@ table {
 body {
   background: #fff;
   font-family: 'Raleway', sans-serif;
+  width: 100%;
+  height: 100%;
   -webkit-font-smoothing: antialiased;
-  /* Fix for webkit rendering */
-  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 100%;
-  height: 100%;
 }
 .header {
   width: 100%;
@@ -625,6 +531,73 @@ body {
   background: #0089b3;
   color: #fff;
 }
-#radar {
-  width: 500px;
+progress,
+progress[role] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-size: auto;
+  height: 40px;
+  width: 100%;
+}
+.skill-list {
+  list-style: none;
+  margin: 0 auto;
+  max-width: 800px;
+}
+.skill {
+  margin-bottom: 1em;
+  position: relative;
+}
+.skill h3 {
+  color: #fff;
+  font-size: 17px;
+  left: 1em;
+  line-height: 1;
+  position: absolute;
+  top: 8px;
+  font-family: 'Raleway', sans-serif;
+}
+.skill progress::-webkit-progress-value {
+  transition: all 3s;
+}
+.start-at-zero progress::-webkit-progress-value {
+  width: 0 !important;
+  transition: none;
+}
+footer {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.skill-1::-webkit-progress-value {
+  background: #FF5A5E;
+}
+.skill-1::-moz-progress-bar {
+  background: #FF5A5E;
+}
+.skill-2::-webkit-progress-value {
+  background: #949fd1;
+}
+.skill-2::-moz-progress-bar {
+  background: #949fd1;
+}
+.skill-3::-webkit-progress-value {
+  background: #2baadd;
+}
+.skill-3::-moz-progress-bar {
+  background: #2baadd;
+}
+.skill-4::-webkit-progress-value {
+  background: #e7aa27;
+}
+.skill-4::-moz-progress-bar {
+  background: #e7aa27;
+}
+.skill-5::-webkit-progress-value {
+  background: #60d560;
+}
+.skill-5::-moz-progress-bar {
+  background: #60d560;
 }

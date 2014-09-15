@@ -42,7 +42,17 @@
 
 </head>
 <body>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=279668475528096&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+	</script>
+	
+	
 	<div class="container">
 
     <div class="header">
@@ -188,7 +198,7 @@
 					</li>
 
 					<li class="skill start-at-zero">
-						<h3>PHP(OOP)</h3>
+						<h3>PHP (OOP)</h3>
 						<progress class="skill-2" max="100" value="75">
 						</progress>
 					</li>
@@ -211,17 +221,19 @@
 						</progress>
 					</li>
 				</ul>
+			
+		  <div class='socialicons'>
+			  	<div class="fb-like" data-href="https://www.facebook.com/tjerkjippe" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+			  	<div class="g-plusone" data-size="small" data-annotation="inline" data-width="300"></div>
+			  <a href="https://twitter.com/intent/tweet?screen_name=tjerkdijkstra" class="twitter-mention-button">Tweet to @tjerkdijkstra</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          </div>   
 				
         </div>
         <!-- footer -->
-        <div class="footer">
-          <div class='socialicons'>
-              <i class='icon-facebook'></i>
-              <i class='icon-twitter'></i>
-              <i class='icon-googleplus'></i>
-              <i class='icon-mail'></i>
-          </div>     
-        </div>
+        <footer>
+  
+        </footer>
         <!-- end footer -->
 
     </div><!-- skills -->
@@ -231,5 +243,9 @@
 
 <!-- End Document
 ================================================== -->
+	
+<script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'nl'}
+</script>
 </body>
 </html>
