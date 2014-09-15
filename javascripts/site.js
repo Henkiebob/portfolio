@@ -133,16 +133,18 @@ $( document ).ready(function() {
 
 
 $(document).scroll(function () {
-	var y = $(this).scrollTop();
-	var x = $(".skill-list").position();
-
-	if (y > (x.top - 50)) { // -50 so things don't overlap
-		$(".skill").addClass(
-			"animation");
+	var y = $(this).scrollTop() + 400;
+	var x = $(".skill-list").offset().top;
+    var height = 50;
+    
+    console.log(y);
+    
+	if (y > (x - 250)) {
+        $(".skill").removeClass("start-at-zero");
+        console.log("sadasd");
 	}
 	else {
-		$(".skill").removeClass(
-			"animation");
+		$(".skill").addClass("start-at-zero");
 	
 	}
 });
