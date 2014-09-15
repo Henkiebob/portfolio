@@ -1,3 +1,4 @@
+@import url(http://www.markmurray.co/codepen/entypostyle.css);
 //compress: true, strictMath: true
 @nice-blue: #099fcd;
 @dark-blue: #0089b3;
@@ -6,6 +7,9 @@
 @logo-color: #0aa0cd;
 @font-gray: #323232;
 @font-black : #2e2e2e;
+
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 
 .bottom-shadow{
   -webkit-box-shadow: 0px 5px 9px 1px rgba(50, 50, 50, 0.42);
@@ -23,15 +27,12 @@ progress, progress[role] {
   width: 100%;
 }
 
-// The unordered list
 .skill-list {
   list-style: none;
   margin: 0 auto;
-  padding: 1em;
   max-width:800px;
 }
 
-// The list item
 .skill {
   margin-bottom: 1em;
   position: relative;
@@ -57,6 +58,42 @@ progress, progress[role] {
     }
 }
 
+.footer{
+    background:#efefef;
+    margin-top: 25px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.socialicons {
+  background: transparent;
+}
+.socialicons i {
+  color: white;
+  padding: 1em;
+  position: relative;
+  background: transparent;
+}
+.socialicons i:hover {
+  top: -2px;
+}
+.socialicons i:nth-child(1) {
+  background: #3b5998;
+  border-left: none;
+}
+.socialicons i:nth-child(2) {
+  background: #00a0d1;
+}
+.socialicons i:nth-child(3) {
+  background: #db4a39;
+}
+.socialicons i:nth-child(4) {
+  background: #c8232c;
+}
+.socialicons i:nth-child(5) {
+  background: #ea4c89;
+  border-right: none;
+}
 
 // The background colors
 .skill-1::-webkit-progress-value {

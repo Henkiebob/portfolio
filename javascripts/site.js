@@ -133,15 +133,11 @@ $( document ).ready(function() {
 
 
 $(document).scroll(function () {
-	var y = $(this).scrollTop() + 400;
+	var y = $(this).scrollTop() + $(window).height();
 	var x = $(".skill-list").offset().top;
-    var height = 50;
-    
-    console.log(y);
-    
+        
 	if (y > (x - 250)) {
         $(".skill").removeClass("start-at-zero");
-        console.log("sadasd");
 	}
 	else {
 		$(".skill").addClass("start-at-zero");
